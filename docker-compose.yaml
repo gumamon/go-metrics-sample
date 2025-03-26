@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"   # /ping
+      - "8000:8000"   # /metrics
+    container_name: simple-go-app
